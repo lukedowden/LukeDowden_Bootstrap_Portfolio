@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Lato', sans-serif;
+    /* color: #00bcd5;
+    color: #00a5bb;
+    color: #008fa0;
+    color: #007888;
+    color: #f5f5f5; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 300px;
+    background-color: #00bcd5;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+section#rightSide {
+    width: calc(100% - 300px);
+    background-color: #f5f5f5;
+    margin-left: auto;
+}
+header a#profile {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: #fff solid 4px;
+    background-image: url('../images/profile-img.jpg');
+    margin-bottom: 10px;
+}
+header nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+header nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+header h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+header p {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+
+section#about,
+section#skill,
+section#work,
+section#education,
+section#volunteer,
+section#achievements {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+section#about h2,
+section#skill h2,
+section#work h2,
+section#education h2,
+section#volunteer h2,
+section#achievements h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00bcd5;
+}
+section#about h3,
+section#skill h3,
+section#work h3,
+section#education h3,
+section#volunteer h3 {
+    font-size: 22px;
+    color: #343a40;
+}
+section#about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #8d8d8d;
+}
+
+section#about a {
+    display: inline-block;
+    color: #343a40;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+section#about a:hover {
+    text-decoration: none;
+    color: #343a40;
+}
+section#about li i.gym {
+    background-image: url('../icons/gym.svg');
+}
+section#about li i.music {
+    background-image: url('../icons/music.svg');
+}
+section#about li i.friends {
+    background-image: url('../icons/friends.svg');
+}
+section#about i {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+}
+section#about i.location {
+    background-image: url('../icons/location.svg');
+}
+section#about i.phone {
+    background-image: url('../icons/call.svg');
+}
+section#about i.email {
+    background-image: url('../icons/email.svg');
+}
+section#about i.linkedin {
+    background-image: url('../icons/linkedin.svg');
+}
+
+section#skill ul,
+section#work ul,
+section#education ul,
+section#achievements ul,
+section#about ul  {
+    padding-left: 20px;
+}
+
+section#skill li,
+section#work li,
+section#education li,
+section#achievements li,
+section#about li {
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+}
+section#skill li i,
+section#work li i,
+section#education li i,
+section#achievements li i,
+section#about li i {
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../icons/tick.svg');
+    margin-top: 3px;
+}
+section#skill li p,
+section#work li p,
+section#education li p,
+section#achievements li p,
+section#about li p {
+    width: calc(100% - 32px);
+    font-size: 17px;
+    color: #343a40; 
+    margin-bottom: 0;
+}
+section#skill aside {
+    width: calc((100% - 80px) / 3);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section#skill aside .skillTxt {
+    width: calc(100% - 60px);
+}
+section#skill .skillTxt p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #8d8d8d;
+    margin: 10px 0;
+}
+section#skill .skillTxt p i {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+section#skill p i.btsp {
+    background-image: url('../images/Bootstrap-Logo-PNG.png');
+}
+section#skill p i.pyth {
+    background-image: url('../images/python.png');
+}
+section#skill p i.java {
+    background-image: url('../images/java.png');
+}
+section#skill p i.js {
+    background-image: url('../images/js.png');
+}
+section#skill p i.css {
+    background-image: url('../images/css.png');
+}
+section#skill p i.html {
+    background-image: url('../images/html.png');
+}
+section#skill p i.office {
+    background-image: url('../images/office.png');
+}
+section#skill p i.azure {
+    background-image: url('../images/Azure.png');
+}
+section#skill p i.windows {
+    background-image: url('../images/windows.png');
+}
+section#skill p i.git {
+    background-image: url('../images/Git.png');
+}
+section#skill p i.linux {
+    background-image: url('../images/linux.png');
+}
+section#skill p i.sap {
+    background-image: url('../images/sap.png');
+}
+section#skill p i.oracle {
+    background-image: url('../images/oracle.png');
+}
+section#skill p i.mys {
+    background-image: url('../images/MySQL.png');
+}
+section#skill aside i {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+section#skill aside i.web {
+    background-image: url('../icons/web.svg');
+}
+section#skill aside i.data {
+    background-image: url('../icons/data.svg');
+}
+section#skill aside i.programming {
+    background-image: url('../icons/programming.svg');
+}
+section#skill aside i.cloud {
+    background-image: url('../icons/cloud.svg');
+}
+section#skill aside i.os {
+    background-image: url('../icons/os.svg');
+}
+section#skill aside i.tools {
+    background-image: url('../icons/tools.svg');
+}
+
+section#work aside:first-child,
+section#volunteer aside:first-child {
+    border-right: #00bcd5 solid 2px;
+}
+section#work aside:last-child,
+section#volunteer aside:last-child {
+    padding-left: 40px;
+}
+section#work h3,
+section#volunteer h3 {
+    position: relative;
+}
+section#work h3::before,
+section#volunteer h3::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #00bcd5;
+    border-radius: 100%;
+    left: -50px;
+}
+section#work h4,
+section#education h4 {
+    font-size: 14px;
+    background-color: #8d8d8d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+}
+section#work p {
+    font-size: 16px;
+    color: #343a40;
+}
+section#work ul {
+    margin: 40px 0;
+}
+section#work li i.work {
+    background-image: url('../icons/work.svg');
+}
+
+section#education li i.study {
+    background-image: url('../icons/education.svg');
+    width: 22px;
+    height: 22px;
+}
+
+section#volunteer h3 {
+    margin-top: 40px;
+}
+
+section#achievements li i.trophy {
+    background-image: url('../icons/trophy.svg');
+}
+section#achievements a {
+    width: 100%;
+    display: inline-block;
+    color: #343a40;
+    font-size: 20px;
+    margin: 10px 0;
+}
+section#achievements a:hover {
+    text-decoration: none;
+    color: #343a40;
+}
+section#achievements a i {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../icons/pdf.svg');
+}
+
+
+
+
+
+/* footer {
+    background-color: #00bcd5;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+footer a.facebook {
+    background-image: url('../icons/facebook.svg');
+}
+footer a.twitter {
+    background-image: url('../icons/twitter.svg');
+}
+footer a.instagram {
+    background-image: url('../icons/instagram.svg');
+}
+footer a.linkedin {
+    background-image: url('../icons/linkedin.svg');
+}  */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 996px) {
+    
+}
+
+@media (min-width: 576px) {
+}
+@media (max-width: 768px) {
+    section#profile h2, 
+    section#skill h2, 
+    section#experience h2, 
+    section#education h2, 
+    section#volunteer h2, 
+    section#achievements h2, 
+    section#hobbies h2, 
+    section#contact h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    section#profile p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 577px) {
+    footer a {
+        margin: 10px 5px 0 5px;
+    }
+}
